@@ -12,8 +12,7 @@ En webapplikasjon for å administrere utleie av produkter. Hvert produkt har en 
 2. Kjør `npm install` i rotmappen.
 3. Gå til `client`-mappen og kjør `npm install`.
 4. Gå til `server`-mappen og kjør `npm install express cors sqlite3`.
-5. Sørg for at `client/public/index.html`, `client/src/index.js`, og andre filer er som spesifisert.
-6. Kjør `npm start` fra rotmappen.
+5. Kjør `npm start` fra rotmappen.
 
 ## Bruk
 - Gå til `http://localhost:3001` (eller port spesifisert i terminalen).
