@@ -1,0 +1,145 @@
+/* Tilpassede stiler for react-big-calendar */
+.rbc-calendar {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  min-height: 600px;
+}
+
+.rbc-month-view {
+  border: 1px solid #dee2e6;
+}
+
+.rbc-month-row {
+  min-height: 100px;
+}
+
+.rbc-day-bg {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.rbc-today {
+  background-color: #f8f9fa;
+}
+
+.rbc-event {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  padding: 2px 5px;
+}
+
+.rbc-event-label {
+  font-weight: 600;
+}
+
+/* Stiler for agenda-visning */
+.rbc-agenda-view {
+  border: 1px solid #dee2e6;
+}
+
+.rbc-agenda-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rbc-agenda-view th,
+.rbc-agenda-view td {
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+}
+
+.rbc-agenda-view th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.rbc-agenda-event-cell {
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Stiler for årsvisning */
+.rbc-year-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.rbc-year-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.rbc-year-month {
+  border: 1px solid #dee2e6;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.rbc-year-month .rbc-month-view {
+  border: none;
+}
+
+.rbc-year-month .rbc-month-header {
+  font-size: 0.8rem;
+}
+
+.rbc-year-month .rbc-day-bg {
+  height: 40px;
+  font-size: 0.7rem;
+}
+
+.rbc-year-month .rbc-event {
+  font-size: 0.6rem;
+  padding: 1px 2px;
+}
+
+.rbc-year-month h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigasjonsknapper */
+.rbc-toolbar {
+  margin-bottom: 1rem;
+}
+
+.rbc-btn-group button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #0056b3;
+}
+
+.rbc-btn-group button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Modal-animasjon */
+.modal.fade .modal-dialog {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Statistikk-tabell */
+.table-responsive {
+  margin-top: 1rem;
+}
