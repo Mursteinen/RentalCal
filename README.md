@@ -21,13 +21,7 @@ En webapplikasjon for å administrere utleie av produkter. Hvert produkt har en 
 - **Produktkalender**: Vis og legg til utleieperioder for et spesifikt produkt via "Vis kalender".
 - **Oversiktskalender**: Se alle utleide produkter og deres utleieperioder på `/overview`.
 - Utleieperioder hindrer overlapp for samme produkt.
-
-## Feilsøking
-- **"Parsing error: Missing semicolon"**: Sjekk for manglende semikolon eller ekstra parenteser i JSX-filer (f.eks. `ProductList.js`).
-- **"React must be in scope"**: Sørg for at `import React from 'react';` er inkludert i alle JSX-filer (`App.js`, `ProductList.js`, `CalendarView.js`, `OverviewCalendar.js`).
-- **DeprecationWarning for util._extend**: Oppdater `react-scripts` i `client/package.json` til nyeste versjon og kjør `npm install` i `client`-mappen. Alternativt, legg til `--no-deprecation` i `NODE_OPTIONS` i startskriptet.
-- Hvis problemer vedvarer, legg til en `.eslintrc.json` for å konfigurere syntaksregler eller vurder å bruke Vite som bygge-verktøy.
-
+  
 ## Database
 - `rental.db` opprettes automatisk i `server`-mappen.
 - Tabeller: `products` (produkter), `rentals` (utleieperioder).
